@@ -75,7 +75,7 @@ def main():
         st.session_state.chat_history = None
 
     st.header("Interact with multiple files:")
-    user_question = st.text_input("Ask your questions here:")
+    user_question = st.chat_input("Ask your questions here:")
     if user_question:
         handle_userinput(user_question)
 
